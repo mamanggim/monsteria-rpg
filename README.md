@@ -20,7 +20,7 @@ Player bisa menjelajahi dunia, bertarung, menangkap monster, menjalani profesi, 
 ## 🎮 Tutorial Pemain (Player Guide)
 
 ### 1. Memulai Game
-- Buka link Github Pages: `https://username.github.io/monsteria-rpg`
+- Buka website game: `https://www.monsteria.web.id`
 - Login / Register menggunakan akun email (via Firebase)
 - Pilih profesi awal → **Farmer / Miner / Hunter**
 
