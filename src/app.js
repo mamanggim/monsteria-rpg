@@ -1,93 +1,53 @@
 import { getPlayer, savePlayer } from "./utils/storage.js";
 import { explore } from "./core/explore.js";
 
-let player = getPlayer();
-let currentBattle = null;
+const player = getPlayer();
+renderUI(player);
 
-const output = document.getElementById("output");
-const playerName = document.getElementById("player-name");
-const wallet = document.getElementById("wallet");
-
-const btnExplore = document.getElementById("btn-explore");
-const btnAttack = document.getElementById("btn-attack");
-const btnCapture = document.getElementById("btn-capture");
-const btnRun = document.getElementById("btn-run");
-const battleActions = document.getElementById("battle-actions");
-
-function updateHUD() {
-  playerName.textContent = player.name;
-  wallet.textContent = `${player.wallet.teria} Teria | ${player.wallet.crystal} Crystal`;
-}
-
-function showMessage(msg) {
-  output.innerHTML += `<p>${msg}</p>`;
-  output.scrollTop = output.scrollHeight;
-}
-
-btnExplore.addEventListener("click", () => {
+// Ambil tombol Explore
+document.getElementById("exploreBtn").addEventListener("click", () => {
   const result = explore(player);
+  handleExploreResult(result, player);
+  savePlayer(player);
+});
 
-  if (result.type === "tutorial" || result.type === "item" || result.type === "nothing") {
-    showMessage(result.message);
-    if (result.next) {
-      // lanjutkan step tutorial
-      const nextStep = result.next();
-      showMessage(nextStep.message);
-      if (nextStep.type === "monster") {
-        startBattle(nextStep.monster, nextStep.action);
-      }
-    }
+function handleExploreResult(result, player) {
+  const logDiv = document.getElementById("log");
+
+  if (!result) {
+    logDiv.innerText = "⚠️ Tidak ada event.";
+    return;
   }
 
-  if (result.type === "monster") {
-    showMessage(result.message);
-    startBattle(result.monster, result.action);
+  logDiv.innerText = result.message;
+
+  // Jika ada next (tutorial step)
+  if (result.type === "tutorial" && result.next) {
+    const btn = document.createElement("button");
+    btn.innerText = "➡️ Next";
+    btn.onclick = () => {
+      const nextResult = result.next();
+      handleExploreResult(nextResult, player);
+      savePlayer(player);
+    };
+    logDiv.appendChild(document.createElement("br"));
+    logDiv.appendChild(btn);
   }
-});
 
-function startBattle(monster, actionFn) {
-  showMessage(`⚔️ Battle melawan ${monster.name} dimulai!`);
-  currentBattle = actionFn();
-  battleActions.style.display = "block";
-}
-
-btnAttack.addEventListener("click", () => {
-  if (!currentBattle) return;
-  currentBattle.attack();
-  renderBattle();
-});
-
-btnCapture.addEventListener("click", () => {
-  if (!currentBattle) return;
-  currentBattle.capture();
-  renderBattle();
-});
-
-btnRun.addEventListener("click", () => {
-  if (!currentBattle) return;
-  currentBattle.run();
-  renderBattle();
-});
-
-function renderBattle() {
-  output.innerHTML = "";
-  currentBattle.log.forEach(msg => showMessage(msg));
-
-  if (currentBattle.isOver()) {
-    battleActions.style.display = "none";
-    savePlayer(player);
-  } else {
-    showMessage(`❤️ Player HP: ${currentBattle.playerHP()} | 🐉 Monster HP: ${currentBattle.monsterHP()}`);
+  // Jika ada monster
+  if (result.type === "monster" && result.action) {
+    const btn = document.createElement("button");
+    btn.innerText = "⚔️ Battle";
+    btn.onclick = () => {
+      result.action();
+    };
+    logDiv.appendChild(document.createElement("br"));
+    logDiv.appendChild(btn);
   }
 }
 
-updateHUD();
-showMessage("Selamat datang di Monsteria!");
-if (player.isNew) {
-  const tut = explore(player); // trigger tutorial
-  showMessage(tut.message);
-  if (tut.next) {
-    const step = tut.next();
-    showMessage(step.message);
-  }
+function renderUI(player) {
+  document.getElementById("playerName").innerText = player.name;
+  document.getElementById("wallet").innerText = 
+    `Teria: ${player.wallet.teria} | Crystal: ${player.wallet.crystal}`;
 }
