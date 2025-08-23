@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monsteria RPG</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <div id="game">
+    <h1>🐉 Monsteria: Legacy of the Aether</h1>
+    <div id="hud">
+      <p><b>Player:</b> <span id="player-name"></span></p>
+      <p><b>Wallet:</b> <span id="wallet"></span></p>
+    </div>
+    <hr />
 
+    <div id="menu">
+      <button id="btn-explore">🌍 Explore</button>
+    </div>
+
+    <div id="output"></div>
+    <div id="battle-actions" style="display:none;">
+      <button id="btn-attack">⚔️ Attack</button>
+      <button id="btn-capture">🎯 Capture</button>
+      <button id="btn-run">🏃 Run</button>
+    </div>
+  </div>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
