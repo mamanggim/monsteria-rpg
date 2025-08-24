@@ -9,7 +9,7 @@ let player = {
   monsters: []
 };
 
-document.getElementById("playerName").innerText = player.name;
+document.getElementById("player-name").innerText = player.name;
 document.getElementById("wallet").innerText = player.wallet;
 
 // Helper untuk tampilkan pesan
@@ -24,7 +24,7 @@ function showOutput(msg) {
 }
 
 // Event klik Explore
-document.getElementById("exploreBtn").addEventListener("click", () => {
+document.getElementById("btn-explore").addEventListener("click", () => {
   const result = explore(player);
 
   if (!result) return;
