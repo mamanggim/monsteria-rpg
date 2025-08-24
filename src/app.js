@@ -1,53 +1,42 @@
-import { getPlayer, savePlayer } from "./utils/storage.js";
+// src/app.js
 import { explore } from "./core/explore.js";
 
-const player = getPlayer();
-renderUI(player);
+let player = {
+  name: "Hero",
+  wallet: 0,
+  isNew: true,
+  inventory: [],
+  monsters: []
+};
 
-// Ambil tombol Explore
+document.getElementById("playerName").innerText = player.name;
+document.getElementById("wallet").innerText = player.wallet;
+
+// Helper untuk tampilkan pesan
+function logMessage(msg) {
+  const logDiv = document.getElementById("log");
+  logDiv.innerHTML += `<p>${msg}</p>`;
+}
+
+// Helper untuk output utama (event sekarang)
+function showOutput(msg) {
+  document.getElementById("output").innerHTML = `<p>${msg}</p>`;
+}
+
+// Event klik Explore
 document.getElementById("exploreBtn").addEventListener("click", () => {
   const result = explore(player);
-  handleExploreResult(result, player);
-  savePlayer(player);
+
+  if (!result) return;
+
+  // Tampilkan pesan utama
+  showOutput(result.message);
+
+  // Tambahkan juga ke log
+  logMessage(result.message);
+
+  // Kalau ada action (misal battle tutorial)
+  if (result.action) {
+    result.action();
+  }
 });
-
-function handleExploreResult(result, player) {
-  const logDiv = document.getElementById("log");
-
-  if (!result) {
-    logDiv.innerText = "⚠️ Tidak ada event.";
-    return;
-  }
-
-  logDiv.innerText = result.message;
-
-  // Jika ada next (tutorial step)
-  if (result.type === "tutorial" && result.next) {
-    const btn = document.createElement("button");
-    btn.innerText = "➡️ Next";
-    btn.onclick = () => {
-      const nextResult = result.next();
-      handleExploreResult(nextResult, player);
-      savePlayer(player);
-    };
-    logDiv.appendChild(document.createElement("br"));
-    logDiv.appendChild(btn);
-  }
-
-  // Jika ada monster
-  if (result.type === "monster" && result.action) {
-    const btn = document.createElement("button");
-    btn.innerText = "⚔️ Battle";
-    btn.onclick = () => {
-      result.action();
-    };
-    logDiv.appendChild(document.createElement("br"));
-    logDiv.appendChild(btn);
-  }
-}
-
-function renderUI(player) {
-  document.getElementById("playerName").innerText = player.name;
-  document.getElementById("wallet").innerText = 
-    `Teria: ${player.wallet.teria} | Crystal: ${player.wallet.crystal}`;
-}
