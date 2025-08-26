@@ -1,19 +1,10 @@
-// [ID-CORE-EXPLORE-V1]
-import { logEvent } from "../ui/log.js";
+import { log } from "../ui/log.js";
 import { startBattle } from "./battle.js";
+import { randomMonster } from "../utils/rng.js";
 
-export function startExplore(player) {
-  logEvent("Kamu menjelajah hutan...");
-
-  // Encounter simple monster random
-  const wildMonster = {
-    id: "MON002",
-    name: "Wild Rat",
-    level: 1,
-    hp: 20,
-    atk: 4,
-  };
-
-  logEvent(`Kamu bertemu ${wildMonster.name}!`);
-  startBattle(player, wildMonster);
+export function explore() {
+  log("You explore the wild...");
+  const monster = randomMonster();
+  log(`A wild ${monster.name} appears!`);
+  startBattle(monster);
 }
