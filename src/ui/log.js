@@ -1,8 +1,7 @@
-// [ID-UI-LOG-V1]
-export function logEvent(message) {
-  const logBox = document.getElementById("log");
+export function log(msg) {
+  const logDiv = document.getElementById("log");
   const entry = document.createElement("p");
-  entry.textContent = message;
-  logBox.appendChild(entry);
-  logBox.scrollTop = logBox.scrollHeight;
+  entry.textContent = msg;
+  logDiv.appendChild(entry);
+  logDiv.scrollTop = logDiv.scrollHeight;
 }
