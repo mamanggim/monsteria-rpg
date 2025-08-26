@@ -1,0 +1,722 @@
+[
+  {
+    "id": "ITM001",
+    "name": "Minor Healing Potion",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "hp_restore": 50 },
+    "description": "Ramuan sederhana untuk memulihkan 50 HP monster."
+  },
+  {
+    "id": "ITM002",
+    "name": "Minor Mana Potion",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "mp_restore": 30 },
+    "description": "Mengembalikan 30 MP, digunakan untuk skill dasar monster."
+  },
+  {
+    "id": "ITM003",
+    "name": "Antidote Herb",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "cure": "poison" },
+    "description": "Herbal alami yang menyembuhkan kondisi Poison."
+  },
+  {
+    "id": "ITM004",
+    "name": "Stamina Snack",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "energy_restore": 20 },
+    "description": "Camilan ringan yang mengembalikan 20 energi player."
+  },
+  {
+    "id": "ITM005",
+    "name": "Capture Net",
+    "rarity": "Common",
+    "type": "Tool",
+    "effect": { "capture_rate_bonus": 0.05 },
+    "description": "Jaring sederhana meningkatkan peluang menangkap monster sebesar 5%."
+  },
+  {
+    "id": "ITM006",
+    "name": "Torch",
+    "rarity": "Common",
+    "type": "Tool",
+    "effect": { "explore_light": true },
+    "description": "Alat penerangan untuk menjelajah area gelap."
+  },
+  {
+    "id": "ITM007",
+    "name": "Wooden Pickaxe",
+    "rarity": "Common",
+    "type": "Tool",
+    "effect": { "mining_bonus": 0.05 },
+    "description": "Alat tambang dasar, meningkatkan hasil mining sebesar 5%."
+  },
+  {
+    "id": "ITM008",
+    "name": "Fishing Rod",
+    "rarity": "Common",
+    "type": "Tool",
+    "effect": { "fishing_bonus": 0.05 },
+    "description": "Pancingan sederhana yang membantu menangkap ikan lebih mudah."
+  },
+  {
+    "id": "ITM009",
+    "name": "Farmer’s Seed Pack",
+    "rarity": "Common",
+    "type": "Material",
+    "effect": { "farming_seed": true },
+    "description": "Paket benih campuran yang dapat ditanam untuk bahan profesi."
+  },
+  {
+    "id": "ITM010",
+    "name": "Stone Fragment",
+    "rarity": "Common",
+    "type": "Material",
+    "effect": { "crafting_material": true },
+    "description": "Pecahan batu kasar, bahan dasar untuk kerajinan sederhana."
+  },
+  {
+    "id": "ITM011",
+    "name": "Lesser Elixir",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "hp_restore": 30, "mp_restore": 15 },
+    "description": "Ramuan campuran yang sedikit memulihkan HP dan MP sekaligus."
+  },
+  {
+    "id": "ITM012",
+    "name": "Bandage",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "heal_over_time": 20 },
+    "description": "Perban sederhana yang memulihkan luka kecil secara perlahan."
+  },
+  {
+    "id": "ITM013",
+    "name": "Smoke Bomb",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "escape_chance": 0.20 },
+    "description": "Menghasilkan asap pekat untuk meningkatkan peluang kabur 20%."
+  },
+  {
+    "id": "ITM014",
+    "name": "Lucky Charm",
+    "rarity": "Common",
+    "type": "Trinket",
+    "effect": { "loot_bonus": 0.05 },
+    "description": "Jimat sederhana yang meningkatkan drop rate item sebesar 5%."
+  },
+  {
+    "id": "ITM015",
+    "name": "Rusty Dagger",
+    "rarity": "Common",
+    "type": "Weapon",
+    "effect": { "atk_bonus": 3 },
+    "description": "Pisau karatan yang hanya memberikan sedikit peningkatan serangan."
+  },
+  {
+    "id": "ITM016",
+    "name": "Traveler’s Cloak",
+    "rarity": "Common",
+    "type": "Armor",
+    "effect": { "def_bonus": 2 },
+    "description": "Jubah tipis yang sedikit melindungi tubuh dari serangan."
+  },
+  {
+    "id": "ITM017",
+    "name": "Broken Ring",
+    "rarity": "Common",
+    "type": "Accessory",
+    "effect": { "mp_bonus": 5 },
+    "description": "Cincin patah yang masih menyimpan sedikit energi sihir."
+  },
+  {
+    "id": "ITM018",
+    "name": "Old Map",
+    "rarity": "Common",
+    "type": "Tool",
+    "effect": { "explore_bonus": 0.05 },
+    "description": "Peta usang yang membantu menjelajah area baru lebih mudah."
+  },
+  {
+    "id": "ITM019",
+    "name": "Cooked Meat",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "monster_affinity": 0.05 },
+    "description": "Daging panggang sederhana yang meningkatkan kedekatan monster 5%."
+  },
+  {
+    "id": "ITM020",
+    "name": "Iron Ore",
+    "rarity": "Common",
+    "type": "Material",
+    "effect": { "crafting_material": true },
+    "description": "Bijih besi kasar, bahan utama untuk membuat senjata dan armor."
+  },
+  {
+    "id": "ITM021",
+    "name": "Healing Herb",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "hp_restore": 25 },
+    "description": "Tanaman obat alami yang memulihkan HP sedikit lebih cepat dibanding Potion Kecil."
+  },
+  {
+    "id": "ITM022",
+    "name": "Mana Leaf",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "mp_restore": 20 },
+    "description": "Daun biru bercahaya yang memulihkan energi sihir monster."
+  },
+  {
+    "id": "ITM023",
+    "name": "Rope",
+    "rarity": "Common",
+    "type": "Tool",
+    "effect": { "capture_bonus": 0.05 },
+    "description": "Tali sederhana yang bisa membantu sedikit saat menangkap monster liar."
+  },
+  {
+    "id": "ITM024",
+    "name": "Traveler’s Boots",
+    "rarity": "Common",
+    "type": "Armor",
+    "effect": { "spd_bonus": 2 },
+    "description": "Sepatu kulit tipis yang meningkatkan sedikit kecepatan bergerak."
+  },
+  {
+    "id": "ITM025",
+    "name": "Stone Amulet",
+    "rarity": "Common",
+    "type": "Accessory",
+    "effect": { "def_bonus": 1 },
+    "description": "Liontin batu sederhana yang memberi sedikit perlindungan magis."
+  },
+  {
+    "id": "ITM026",
+    "name": "Wooden Shield",
+    "rarity": "Common",
+    "type": "Armor",
+    "effect": { "def_bonus": 4 },
+    "description": "Perisai kayu rapuh, lumayan menahan serangan lemah."
+  },
+  {
+    "id": "ITM027",
+    "name": "Simple Bow",
+    "rarity": "Common",
+    "type": "Weapon",
+    "effect": { "atk_bonus": 4 },
+    "description": "Busur sederhana dari kayu, cocok untuk pemula dalam pertempuran jarak jauh."
+  },
+  {
+    "id": "ITM028",
+    "name": "Torch",
+    "rarity": "Common",
+    "type": "Tool",
+    "effect": { "explore_bonus": 0.1 },
+    "description": "Obor untuk penerangan, membantu menjelajah gua lebih aman."
+  },
+  {
+    "id": "ITM029",
+    "name": "Training Manual",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "exp_bonus": 0.05 },
+    "description": "Buku latihan dasar, memberikan bonus exp kecil saat digunakan."
+  },
+  {
+    "id": "ITM030",
+    "name": "Leather Scrap",
+    "rarity": "Common",
+    "type": "Material",
+    "effect": { "crafting_material": true },
+    "description": "Potongan kulit bekas, bisa dipakai sebagai bahan crafting."
+  },
+  {
+    "id": "ITM031",
+    "name": "Energy Snack",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "hp_restore": 15, "mp_restore": 10 },
+    "description": "Makanan ringan yang sedikit mengembalikan tenaga dan energi sihir."
+  },
+  {
+    "id": "ITM032",
+    "name": "Copper Coin",
+    "rarity": "Common",
+    "type": "Currency",
+    "effect": { "value": 10 },
+    "description": "Koin tembaga yang bisa digunakan dalam transaksi kecil di pasar."
+  },
+  {
+    "id": "ITM033",
+    "name": "Cloth Bandage",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "hp_restore": 30, "heal_status": "bleed" },
+    "description": "Perban kain sederhana untuk menghentikan luka pendarahan."
+  },
+  {
+    "id": "ITM034",
+    "name": "Rusty Dagger",
+    "rarity": "Common",
+    "type": "Weapon",
+    "effect": { "atk_bonus": 3, "spd_bonus": 1 },
+    "description": "Belati berkarat, senjata seadanya dengan kecepatan lumayan."
+  },
+  {
+    "id": "ITM035",
+    "name": "Traveler’s Cloak",
+    "rarity": "Common",
+    "type": "Armor",
+    "effect": { "def_bonus": 2, "spd_bonus": 1 },
+    "description": "Jubah ringan yang memberi sedikit perlindungan dan kenyamanan."
+  },
+  {
+    "id": "ITM036",
+    "name": "Simple Ring",
+    "rarity": "Common",
+    "type": "Accessory",
+    "effect": { "hp_bonus": 10 },
+    "description": "Cincin logam polos yang meningkatkan sedikit HP pemakai."
+  },
+  {
+    "id": "ITM037",
+    "name": "Wooden Hammer",
+    "rarity": "Common",
+    "type": "Tool",
+    "effect": { "crafting_bonus": 0.05 },
+    "description": "Alat dasar untuk menempa barang sederhana dalam crafting."
+  },
+  {
+    "id": "ITM038",
+    "name": "Scout’s Map",
+    "rarity": "Common",
+    "type": "Tool",
+    "effect": { "explore_bonus": 0.15 },
+    "description": "Peta wilayah dasar yang membantu saat menjelajah area baru."
+  },
+  {
+    "id": "ITM039",
+    "name": "Antidote Herb",
+    "rarity": "Common",
+    "type": "Consumable",
+    "effect": { "heal_status": "poison" },
+    "description": "Herbal penawar racun ringan yang sering dipakai petualang pemula."
+  },
+  {
+    "id": "ITM040",
+    "name": "Basic Net",
+    "rarity": "Common",
+    "type": "Tool",
+    "effect": { "capture_bonus": 0.1 },
+    "description": "Jaring sederhana untuk membantu menangkap monster kecil."
+  },
+  {
+    "id": "ITM041",
+    "name": "Elixir of Clarity",
+    "rarity": "Uncommon",
+    "type": "Consumable",
+    "effect": { "mp_restore": 50, "buff": { "int_bonus": 5, "duration": 3 } },
+    "description": "Ramuan biru pekat yang memulihkan MP dan meningkatkan kecerdasan sementara."
+  },
+  {
+    "id": "ITM042",
+    "name": "Iron Ingot",
+    "rarity": "Uncommon",
+    "type": "Material",
+    "effect": { "crafting_bonus": 0.1 },
+    "description": "Bahan tempa berkualitas sedang, dasar untuk membuat senjata dan armor."
+  },
+  {
+    "id": "ITM043",
+    "name": "Venom Extract",
+    "rarity": "Uncommon",
+    "type": "Material",
+    "effect": { "poison_enchant": true },
+    "description": "Ekstrak racun pekat dari monster berbisa, dipakai untuk ramuan atau senjata beracun."
+  },
+  {
+    "id": "ITM044",
+    "name": "Hunter’s Bow",
+    "rarity": "Uncommon",
+    "type": "Weapon",
+    "effect": { "atk_bonus": 8, "spd_bonus": 3 },
+    "description": "Busur kayu lentur, sering dipakai pemburu karena ringan dan akurat."
+  },
+  {
+    "id": "ITM045",
+    "name": "Iron Shield",
+    "rarity": "Uncommon",
+    "type": "Armor",
+    "effect": { "def_bonus": 10, "hp_bonus": 20 },
+    "description": "Perisai logam sederhana yang mampu menahan serangan fisik lebih baik."
+  },
+  {
+    "id": "ITM046",
+    "name": "Amulet of Focus",
+    "rarity": "Uncommon",
+    "type": "Accessory",
+    "effect": { "mp_bonus": 20, "status_resist": "sleep" },
+    "description": "Jimat yang menjaga kewaspadaan, melindungi dari serangan tidur musuh."
+  },
+  {
+    "id": "ITM047",
+    "name": "Beast Collar",
+    "rarity": "Uncommon",
+    "type": "Tool",
+    "effect": { "capture_bonus": 0.25 },
+    "description": "Kalung khusus untuk menjinakkan monster liar ukuran sedang."
+  },
+  {
+    "id": "ITM048",
+    "name": "Mana Crystal Shard",
+    "rarity": "Uncommon",
+    "type": "Material",
+    "effect": { "upgrade_bonus": 0.1 },
+    "description": "Pecahan kristal sihir yang menyimpan energi untuk memperkuat perlengkapan."
+  },
+  {
+    "id": "ITM049",
+    "name": "Potion of Vigor",
+    "rarity": "Uncommon",
+    "type": "Consumable",
+    "effect": { "hp_restore": 60, "buff": { "atk_bonus": 4, "duration": 3 } },
+    "description": "Ramuan merah pekat yang memulihkan kesehatan sekaligus meningkatkan kekuatan."
+  },
+  {
+    "id": "ITM050",
+    "name": "Explorer’s Compass",
+    "rarity": "Uncommon",
+    "type": "Tool",
+    "effect": { "explore_bonus": 0.25 },
+    "description": "Kompas ajaib yang memudahkan penjelajah menemukan jalur aman."
+  },
+  {
+    "id": "ITM051",
+    "name": "Warrior’s Tonic",
+    "rarity": "Uncommon",
+    "type": "Consumable",
+    "effect": { "hp_restore": 40, "buff": { "def_bonus": 6, "duration": 4 } },
+    "description": "Ramuan kuat yang memperkuat pertahanan tubuh sementara."
+  },
+  {
+    "id": "ITM052",
+    "name": "Silver Ore",
+    "rarity": "Uncommon",
+    "type": "Material",
+    "effect": { "crafting_bonus": 0.15 },
+    "description": "Bijih perak murni, digunakan untuk membuat perhiasan dan peralatan sihir."
+  },
+  {
+    "id": "ITM053",
+    "name": "Wolf Pelt",
+    "rarity": "Uncommon",
+    "type": "Material",
+    "effect": { "armor_bonus": 0.1 },
+    "description": "Kulit serigala tebal yang dapat dijadikan bahan pakaian atau armor ringan."
+  },
+  {
+    "id": "ITM054",
+    "name": "Blade of Ashen Fang",
+    "rarity": "Uncommon",
+    "type": "Weapon",
+    "effect": { "atk_bonus": 12, "fire_damage": 5 },
+    "description": "Pedang hitam dengan aura api lemah, ditempa dari taring monster."
+  },
+  {
+    "id": "ITM055",
+    "name": "Chainmail Vest",
+    "rarity": "Uncommon",
+    "type": "Armor",
+    "effect": { "def_bonus": 15, "spd_penalty": -2 },
+    "description": "Armor rantai ringan, menawarkan perlindungan bagus dengan sedikit mengurangi kecepatan."
+  },
+  {
+    "id": "ITM056",
+    "name": "Ring of Swiftness",
+    "rarity": "Uncommon",
+    "type": "Accessory",
+    "effect": { "spd_bonus": 6 },
+    "description": "Cincin yang membuat pemakainya bergerak lebih cepat dan lincah."
+  },
+  {
+    "id": "ITM057",
+    "name": "Beast Net",
+    "rarity": "Uncommon",
+    "type": "Tool",
+    "effect": { "capture_bonus": 0.3 },
+    "description": "Jaring kokoh untuk menjebak monster liar dengan tingkat keberhasilan cukup tinggi."
+  },
+  {
+    "id": "ITM058",
+    "name": "Arcane Powder",
+    "rarity": "Uncommon",
+    "type": "Material",
+    "effect": { "upgrade_bonus": 0.15 },
+    "description": "Serbuk sihir dari kristal hancur, digunakan dalam alkimia dan peningkatan senjata."
+  },
+  {
+    "id": "ITM059",
+    "name": "Potion of Resilience",
+    "rarity": "Uncommon",
+    "type": "Consumable",
+    "effect": { "hp_restore": 70, "buff": { "status_resist": "poison", "duration": 4 } },
+    "description": "Ramuan pahit yang memperkuat tubuh dan melindungi dari racun sementara."
+  },
+  {
+    "id": "ITM060",
+    "name": "Explorer’s Lantern",
+    "rarity": "Uncommon",
+    "type": "Tool",
+    "effect": { "explore_bonus": 0.3, "dark_area_access": true },
+    "description": "Lentera ajaib yang memungkinkan penjelajahan di area gelap."
+  },
+  {
+    "id": "ITM061",
+    "name": "Hunter’s Bow",
+    "rarity": "Uncommon",
+    "type": "Weapon",
+    "effect": { "atk_bonus": 10, "crit_rate": 0.08 },
+    "description": "Busur ringan yang sering digunakan para pemburu hutan."
+  },
+  {
+    "id": "ITM062",
+    "name": "Mystic Robe",
+    "rarity": "Uncommon",
+    "type": "Armor",
+    "effect": { "def_bonus": 8, "mana_regen": 3 },
+    "description": "Jubah tipis yang terbuat dari kain sihir, meningkatkan regenerasi energi magis."
+  },
+  {
+    "id": "ITM063",
+    "name": "Amulet of Vitality",
+    "rarity": "Uncommon",
+    "type": "Accessory",
+    "effect": { "hp_bonus": 50 },
+    "description": "Kalung dengan batu merah menyala yang memperkuat daya tahan tubuh."
+  },
+  {
+    "id": "ITM064",
+    "name": "Elixir of Endurance",
+    "rarity": "Uncommon",
+    "type": "Consumable",
+    "effect": { "stamina_restore": 40, "buff": { "def_bonus": 8, "duration": 5 } },
+    "description": "Eliksir yang meningkatkan ketahanan tubuh sekaligus memulihkan stamina."
+  },
+  {
+    "id": "ITM065",
+    "name": "Bronze Pickaxe",
+    "rarity": "Uncommon",
+    "type": "Tool",
+    "effect": { "mining_bonus": 0.2 },
+    "description": "Alat tambang yang lebih kuat dari kayu, cocok untuk menambang bijih perunggu dan perak."
+  },
+  {
+    "id": "ITM066",
+    "name": "Enchanted Feather",
+    "rarity": "Uncommon",
+    "type": "Material",
+    "effect": { "crafting_bonus": 0.2 },
+    "description": "Bulu burung mistis yang sering dipakai dalam ramuan terbang."
+  },
+  {
+    "id": "ITM067",
+    "name": "Herbal Bandage",
+    "rarity": "Uncommon",
+    "type": "Consumable",
+    "effect": { "hp_restore": 25, "heal_over_time": { "amount": 10, "duration": 3 } },
+    "description": "Perban alami yang direndam dalam ramuan herbal, menyembuhkan luka secara bertahap."
+  },
+  {
+    "id": "ITM068",
+    "name": "Moonstone Shard",
+    "rarity": "Uncommon",
+    "type": "Material",
+    "effect": { "upgrade_bonus": 0.18 },
+    "description": "Pecahan batu bulan bercahaya, sering dipakai dalam peningkatan equipment."
+  },
+  {
+    "id": "ITM069",
+    "name": "Potion of Clarity",
+    "rarity": "Uncommon",
+    "type": "Consumable",
+    "effect": { "mana_restore": 35, "buff": { "focus_bonus": 0.15, "duration": 4 } },
+    "description": "Ramuan biru yang menenangkan pikiran dan meningkatkan fokus."
+  },
+  {
+    "id": "ITM070",
+    "name": "Traveler’s Boots",
+    "rarity": "Uncommon",
+    "type": "Armor",
+    "effect": { "spd_bonus": 4, "explore_bonus": 0.15 },
+    "description": "Sepatu kokoh yang dibuat khusus untuk perjalanan jauh."
+  },
+  {
+    "id": "ITM071",
+    "name": "Flamebrand Sword",
+    "rarity": "Rare",
+    "type": "Weapon",
+    "effect": { "atk_bonus": 20, "fire_dmg": 0.25 },
+    "description": "Pedang legendaris yang diselimuti api abadi, mampu membakar musuh setiap tebasan."
+  },
+  {
+    "id": "ITM072",
+    "name": "Frostguard Shield",
+    "rarity": "Rare",
+    "type": "Armor",
+    "effect": { "def_bonus": 20, "ice_resist": 0.3 },
+    "description": "Perisai raksasa yang membekukan serangan musuh yang menghantamnya."
+  },
+  {
+    "id": "ITM073",
+    "name": "Ring of Eternity",
+    "rarity": "Rare",
+    "type": "Accessory",
+    "effect": { "hp_bonus": 100, "regen_rate": 5 },
+    "description": "Cincin antik yang dipercaya memberi keabadian bagi pemakainya."
+  },
+  {
+    "id": "ITM074",
+    "name": "Elixir of Berserk",
+    "rarity": "Rare",
+    "type": "Consumable",
+    "effect": { "buff": { "atk_bonus": 15, "crit_rate": 0.2, "duration": 6 }, "hp_drain": 10 },
+    "description": "Ramuan merah pekat yang meningkatkan kekuatan, tetapi menguras energi peminum."
+  },
+  {
+    "id": "ITM075",
+    "name": "Runed Pickaxe",
+    "rarity": "Rare",
+    "type": "Tool",
+    "effect": { "mining_bonus": 0.5, "rare_ore_chance": 0.25 },
+    "description": "Alat tambang bertatahkan rune kuno, memperbesar peluang menemukan bijih langka."
+  },
+  {
+    "id": "ITM076",
+    "name": "Phoenix Feather",
+    "rarity": "Rare",
+    "type": "Material",
+    "effect": { "revive_on_use": true, "crafting_bonus": 0.4 },
+    "description": "Bulu burung Phoenix yang mampu membangkitkan pemiliknya sekali saja."
+  },
+  {
+    "id": "ITM077",
+    "name": "Dragon Scale Mail",
+    "rarity": "Rare",
+    "type": "Armor",
+    "effect": { "def_bonus": 25, "fire_resist": 0.35, "hp_bonus": 50 },
+    "description": "Baju zirah dari sisik naga, memberi perlindungan luar biasa terhadap api."
+  },
+  {
+    "id": "ITM078",
+    "name": "Stormcaller Staff",
+    "rarity": "Rare",
+    "type": "Weapon",
+    "effect": { "atk_bonus": 15, "lightning_dmg": 0.3, "mana_bonus": 40 },
+    "description": "Tongkat ajaib yang memanggil kilat untuk menyambar musuh."
+  },
+  {
+    "id": "ITM079",
+    "name": "Potion of Transcendence",
+    "rarity": "Rare",
+    "type": "Consumable",
+    "effect": { "all_stats_bonus": 10, "duration": 5 },
+    "description": "Ramuan mistis yang meningkatkan seluruh kemampuan pengguna dalam waktu singkat."
+  },
+  {
+    "id": "ITM080",
+    "name": "Amulet of Shadows",
+    "rarity": "Rare",
+    "type": "Accessory",
+    "effect": { "evasion_bonus": 0.25, "spd_bonus": 8 },
+    "description": "Kalung hitam pekat yang memungkinkan pemakai bergerak laksana bayangan."
+  },
+  {
+    "id": "ITM081",
+    "name": "Celestial Bow",
+    "rarity": "Rare",
+    "type": "Weapon",
+    "effect": { "atk_bonus": 18, "crit_rate": 0.15, "light_dmg": 0.2 },
+    "description": "Busur perak yang diberkati cahaya bintang, setiap anak panah menyinari langit."
+  },
+  {
+    "id": "ITM082",
+    "name": "Gauntlets of Fury",
+    "rarity": "Rare",
+    "type": "Armor",
+    "effect": { "atk_bonus": 12, "crit_dmg": 0.3, "spd_bonus": 5 },
+    "description": "Sarung tangan besi dengan rune kemarahan, meningkatkan kekuatan serangan jarak dekat."
+  },
+  {
+    "id": "ITM083",
+    "name": "Cloak of the Abyss",
+    "rarity": "Rare",
+    "type": "Armor",
+    "effect": { "evasion_bonus": 0.2, "dark_resist": 0.3 },
+    "description": "Jubah hitam kelam yang menyelimuti penggunanya dari pandangan musuh."
+  },
+  {
+    "id": "ITM084",
+    "name": "Obsidian Dagger",
+    "rarity": "Rare",
+    "type": "Weapon",
+    "effect": { "atk_bonus": 16, "poison_chance": 0.25 },
+    "description": "Belati dari batu obsidian yang tajam, sering meninggalkan racun di luka musuh."
+  },
+  {
+    "id": "ITM085",
+    "name": "Horn of Valor",
+    "rarity": "Rare",
+    "type": "Accessory",
+    "effect": { "party_atk_bonus": 10, "party_def_bonus": 10 },
+    "description": "Tanduk perang kuno, ketika ditiup meningkatkan semangat seluruh tim."
+  },
+  {
+    "id": "ITM086",
+    "name": "Mystic Lantern",
+    "rarity": "Rare",
+    "type": "Tool",
+    "effect": { "exploration_bonus": 0.5, "monster_avoidance": 0.2 },
+    "description": "Lentera bercahaya biru yang membantu penjelajah menemukan jalan dalam kegelapan."
+  },
+  {
+    "id": "ITM087",
+    "name": "Elixir of Arcana",
+    "rarity": "Rare",
+    "type": "Consumable",
+    "effect": { "mana_bonus": 50, "magic_dmg": 0.2, "duration": 8 },
+    "description": "Ramuan ungu bercahaya yang memperkuat sihir peminumnya."
+  },
+  {
+    "id": "ITM088",
+    "name": "Titan's Belt",
+    "rarity": "Rare",
+    "type": "Accessory",
+    "effect": { "hp_bonus": 200, "def_bonus": 15 },
+    "description": "Sabuk raksasa yang memberi kekuatan dan daya tahan luar biasa."
+  },
+  {
+    "id": "ITM089",
+    "name": "Chalice of Fortune",
+    "rarity": "Rare",
+    "type": "Consumable",
+    "effect": { "drop_rate_bonus": 0.3, "gold_bonus": 0.25, "duration": 5 },
+    "description": "Piala emas yang memberikan keberuntungan luar biasa bagi peminumnya."
+  },
+  {
+    "id": "ITM090",
+    "name": "Spirit Beads",
+    "rarity": "Rare",
+    "type": "Accessory",
+    "effect": { "mana_regen": 8, "spirit_bonus": 15 },
+    "description": "Manik-manik spiritual yang meningkatkan energi roh pemakai."
+  }
+]
