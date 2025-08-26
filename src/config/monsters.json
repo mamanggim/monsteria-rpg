@@ -1,0 +1,5 @@
+[
+  { "id": "MON001", "name": "Slime", "hp": 30, "atk": 5 },
+  { "id": "MON002", "name": "Wolf", "hp": 45, "atk": 8 },
+  { "id": "MON003", "name": "Goblin", "hp": 50, "atk": 10 }
+]
