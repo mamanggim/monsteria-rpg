@@ -1,42 +1,10 @@
-// src/app.js
-import { explore } from "./core/explore.js";
+// [ID-APP-V1]
+import { renderHUD } from "./ui/hud.js";
+import { startTutorial } from "./core/tutorial.js";
 
-let player = {
-  name: "Hero",
-  wallet: 0,
-  isNew: true,
-  inventory: [],
-  monsters: []
+window.onload = () => {
+  const player = { name: "Player1", monsters: [] };
+
+  renderHUD(player);
+  startTutorial(player);
 };
-
-document.getElementById("player-name").innerText = player.name;
-document.getElementById("wallet").innerText = player.wallet;
-
-// Helper untuk tampilkan pesan
-function logMessage(msg) {
-  const logDiv = document.getElementById("log");
-  logDiv.innerHTML += `<p>${msg}</p>`;
-}
-
-// Helper untuk output utama (event sekarang)
-function showOutput(msg) {
-  document.getElementById("output").innerHTML = `<p>${msg}</p>`;
-}
-
-// Event klik Explore
-document.getElementById("btn-explore").addEventListener("click", () => {
-  const result = explore(player);
-
-  if (!result) return;
-
-  // Tampilkan pesan utama
-  showOutput(result.message);
-
-  // Tambahkan juga ke log
-  logMessage(result.message);
-
-  // Kalau ada action (misal battle tutorial)
-  if (result.action) {
-    result.action();
-  }
-});
